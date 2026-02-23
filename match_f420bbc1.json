@@ -1,0 +1,83 @@
+{
+  "game_id": "f420bbc1-c0ce-4942-8f7c-d030afa5c52b",
+  "p1_name": "Lyra the Forsaken",
+  "p2_name": "Kael Duskmantle",
+  "rounds": [
+    {
+      "round": 1,
+      "veil_collapse": false,
+      "flanking_bonus_awarded_to": null,
+      "combat_events": [
+        {
+          "order": 1,
+          "attacker": {
+            "name": "Veyra Silentblade",
+            "type": "Specter",
+            "level": 1,
+            "owner": "Lyra the Forsaken"
+          },
+          "defender": {
+            "name": "Gravaul the Unyielding",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Kael Duskmantle"
+          },
+          "type_advantage": "disadvantage (0.75x)",
+          "damage_dealt": 4,
+          "position_bonus": 0,
+          "defender_destroyed": false
+        },
+        {
+          "order": 2,
+          "attacker": {
+            "name": "Gravaul the Unyielding",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Kael Duskmantle"
+          },
+          "defender": {
+            "name": "Veyra Silentblade",
+            "type": "Specter",
+            "level": 1,
+            "owner": "Lyra the Forsaken"
+          },
+          "type_advantage": "advantage (1.5x)",
+          "damage_dealt": 12,
+          "position_bonus": 1,
+          "defender_destroyed": true
+        }
+      ],
+      "round_outcome": {
+        "p1_surviving_defense": 0,
+        "p2_surviving_defense": 10,
+        "winner": "Kael Duskmantle",
+        "points_awarded": 2,
+        "reason": "Kael Duskmantle achieved a full wipe \u2014 all enemy cards destroyed (+2 points)"
+      },
+      "match_score": {
+        "Lyra the Forsaken": 0,
+        "Kael Duskmantle": 2
+      },
+      "match_winner": null,
+      "instructions": "You are the Veilborn Dungeon Master. Narrate this round dramatically and cinematically in 150-250 words. Narrate each combat event in order. Do not change any outcomes \u2014 the winner, damage dealt, and destroyed cards are fixed. Use dark mythological language befitting a world where the Veil between life and death is thinning. Address both Veilweavers directly. End with the round score. If match_winner is set, deliver a dramatic match conclusion."
+    }
+  ],
+  "narrations": [
+    {
+      "round": 1,
+      "title": "Descent of the Unyielding",
+      "narration": "From the shadows emerged Veyra Silentblade, a Specter under Lyra the Forsaken's command, her form as insubstantial as the night itself, attempting to strike at the heart of Gravaul the Unyielding. Yet the Revenant's armor seemed as though forged from the very bones of the earth, impervious to Veyra's ghostly tendrils. Her cold iron glancing off the grave-fire which surrounded him, dealing but a shallow wound.\n\nSeizing the opportunity, Gravaul rose with inexorable force, his blades imbued with malevolent vigor. The advantage of the Revenant against the ethereal Specter was writ in his every movement, an overwhelming force that did not relent. In a surge, perfected by the position of dominance, Gravaul struck mightily, the Revenant's attack shattering Veyra's ephemeral form utterly. She dissipated, a memory drawn back into the Veil's embrace.\n\nLyra felt the sting of loss, as her prized Specter dissolved, while Kael Duskmantle's stance only grew stronger, holding fast against the ebbing tides of shadow. The round decisively belonged to Kael, Gravaul's unyielding prowess leaving no doubt as to the dominion of the living dead in this opening bout.",
+      "key_moment": "Gravaul the Unyielding struck with relentless force, eradicating Veyra Silentblade.",
+      "tone": "tense"
+    }
+  ],
+  "image_prompts": [
+    {
+      "round": 1,
+      "positive": "armored undead warrior, ancient battle-worn plate mail named Gravaul the Unyielding, wreathed in pale death-fire, exposed bone at joints, glowing grave-light eyes, marching through and destroying a translucent ghostly assassin, semi-transparent ethereal body named Veyra Silentblade, trailing shadow tendrils, hollow void eyes, wisps of dark mist, the defeated creature dissolving back into the Veil in an explosion of dark energy, dark mythology aesthetic, Veil rift background with crackling dark energy, professional fantasy card game art, 4k resolution, dramatic shadows",
+      "negative": "cartoon, anime, bright colors, cheerful, simple, low quality, blurry, watermark, text, UI elements, white background",
+      "subject": "Gravaul the Unyielding destroys Veyra Silentblade"
+    }
+  ],
+  "match_winner": "Draw"
+}

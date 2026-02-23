@@ -4,7 +4,7 @@ Runs a complete simulated match between two AI-controlled players,
 pipes each round through the DM agent, and generates image prompts.
 
 Usage:
-    python simulate_match.py                        # uses ANTHROPIC_API_KEY env var
+    python simulate_match.py                        # uses OPENAI_API_KEY env var
     python simulate_match.py --dry-run              # skip API calls, show structure only
     python simulate_match.py --rounds 3             # play only 3 rounds
 """
@@ -339,9 +339,9 @@ if __name__ == "__main__":
         preview_card_art_prompts()
         sys.exit(0)
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key and not args.dry_run:
-        print("⚠️  No ANTHROPIC_API_KEY found. Running in dry-run mode.")
+        print("⚠️  No OPENAI_API_KEY found. Running in dry-run mode.")
         args.dry_run = True
 
     results = simulate_match(
@@ -355,7 +355,7 @@ if __name__ == "__main__":
     )
 
     # Save results to file
-    output_file = f"/home/claude/veilborn/match_{results['game_id'][:8]}.json"
+    output_file = f"match_{results['game_id'][:8]}.json"
     with open(output_file, "w") as f:
         json.dump(results, f, indent=2, default=str)
     print(f"📁 Match results saved to: {output_file}")

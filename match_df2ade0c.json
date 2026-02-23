@@ -1,0 +1,164 @@
+{
+  "game_id": "df2ade0c-8706-4769-9bed-b1f18badae3d",
+  "p1_name": "Lyra the Forsaken",
+  "p2_name": "Kael Duskmantle",
+  "rounds": [
+    {
+      "round": 1,
+      "veil_collapse": false,
+      "flanking_bonus_awarded_to": null,
+      "combat_events": [
+        {
+          "order": 1,
+          "attacker": {
+            "name": "Serath the Unburied",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Lyra the Forsaken"
+          },
+          "defender": {
+            "name": "Gravaul the Unyielding",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Kael Duskmantle"
+          },
+          "type_advantage": "neutral (1.0x)",
+          "damage_dealt": 6,
+          "position_bonus": 0,
+          "defender_destroyed": false
+        },
+        {
+          "order": 2,
+          "attacker": {
+            "name": "Gravaul the Unyielding",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Kael Duskmantle"
+          },
+          "defender": {
+            "name": "Serath the Unburied",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Lyra the Forsaken"
+          },
+          "type_advantage": "neutral (1.0x)",
+          "damage_dealt": 7,
+          "position_bonus": 0,
+          "defender_destroyed": false
+        }
+      ],
+      "round_outcome": {
+        "p1_surviving_defense": 3,
+        "p2_surviving_defense": 8,
+        "winner": "Kael Duskmantle",
+        "points_awarded": 1,
+        "reason": "Kael Duskmantle had higher surviving defense (8 vs 3) (+1 point)"
+      },
+      "match_score": {
+        "Lyra the Forsaken": 0,
+        "Kael Duskmantle": 1
+      },
+      "match_winner": null,
+      "instructions": "You are the Veilborn Dungeon Master. Narrate this round dramatically and cinematically in 150-250 words. Narrate each combat event in order. Do not change any outcomes \u2014 the winner, damage dealt, and destroyed cards are fixed. Use dark mythological language befitting a world where the Veil between life and death is thinning. Address both Veilweavers directly. End with the round score. If match_winner is set, deliver a dramatic match conclusion."
+    },
+    {
+      "round": 2,
+      "veil_collapse": false,
+      "flanking_bonus_awarded_to": null,
+      "combat_events": [],
+      "round_outcome": {
+        "p1_surviving_defense": 6,
+        "p2_surviving_defense": 0,
+        "winner": "Lyra the Forsaken",
+        "points_awarded": 2,
+        "reason": "Lyra the Forsaken achieved a full wipe \u2014 all enemy cards destroyed (+2 points)"
+      },
+      "match_score": {
+        "Lyra the Forsaken": 2,
+        "Kael Duskmantle": 1
+      },
+      "match_winner": null,
+      "instructions": "You are the Veilborn Dungeon Master. Narrate this round dramatically and cinematically in 150-250 words. Narrate each combat event in order. Do not change any outcomes \u2014 the winner, damage dealt, and destroyed cards are fixed. Use dark mythological language befitting a world where the Veil between life and death is thinning. Address both Veilweavers directly. End with the round score. If match_winner is set, deliver a dramatic match conclusion."
+    },
+    {
+      "round": 4,
+      "veil_collapse": false,
+      "flanking_bonus_awarded_to": null,
+      "combat_events": [
+        {
+          "order": 1,
+          "attacker": {
+            "name": "Ashling",
+            "type": "Specter",
+            "level": 1,
+            "owner": "Lyra the Forsaken"
+          },
+          "defender": {
+            "name": "Serath the Unburied",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Kael Duskmantle"
+          },
+          "type_advantage": "disadvantage (0.75x)",
+          "damage_dealt": 3,
+          "position_bonus": 0,
+          "defender_destroyed": false
+        },
+        {
+          "order": 2,
+          "attacker": {
+            "name": "Serath the Unburied",
+            "type": "Revenant",
+            "level": 1,
+            "owner": "Kael Duskmantle"
+          },
+          "defender": {
+            "name": "Ashling",
+            "type": "Specter",
+            "level": 1,
+            "owner": "Lyra the Forsaken"
+          },
+          "type_advantage": "advantage (1.5x)",
+          "damage_dealt": 13,
+          "position_bonus": 1,
+          "defender_destroyed": true
+        }
+      ],
+      "round_outcome": {
+        "p1_surviving_defense": 0,
+        "p2_surviving_defense": 7,
+        "winner": "Kael Duskmantle",
+        "points_awarded": 2,
+        "reason": "Kael Duskmantle achieved a full wipe \u2014 all enemy cards destroyed (+2 points)"
+      },
+      "match_score": {
+        "Lyra the Forsaken": 2,
+        "Kael Duskmantle": 3
+      },
+      "match_winner": "Kael Duskmantle",
+      "instructions": "You are the Veilborn Dungeon Master. Narrate this round dramatically and cinematically in 150-250 words. Narrate each combat event in order. Do not change any outcomes \u2014 the winner, damage dealt, and destroyed cards are fixed. Use dark mythological language befitting a world where the Veil between life and death is thinning. Address both Veilweavers directly. End with the round score. If match_winner is set, deliver a dramatic match conclusion."
+    }
+  ],
+  "narrations": [],
+  "image_prompts": [
+    {
+      "round": 1,
+      "positive": "armored undead warrior, ancient battle-worn plate mail named Gravaul the Unyielding, wreathed in pale death-fire, exposed bone at joints, glowing grave-light eyes, marching through a armored undead warrior, ancient battle-worn plate mail named Serath the Unburied, wreathed in pale death-fire, exposed bone at joints, glowing grave-light eyes, both locked in titanic combat as the Veil cracks around them, dark mythology aesthetic, Veil rift background with crackling dark energy, professional fantasy card game art, 4k resolution, dramatic shadows",
+      "negative": "cartoon, anime, bright colors, cheerful, simple, low quality, blurry, watermark, text, UI elements, white background",
+      "subject": "Gravaul the Unyielding strikes Serath the Unburied"
+    },
+    {
+      "round": 2,
+      "positive": "A dark Veil rift tearing open, crackling with ancient energy, two Veilweavers facing each other across a shattered battlefield, dark mythology aesthetic, Veil rift background with crackling dark energy, professional fantasy card game art, 4k resolution, dramatic shadows",
+      "negative": "cartoon, anime, bright colors, cheerful, simple, low quality, blurry, watermark, text, UI elements, white background",
+      "subject": "Empty rift opening"
+    },
+    {
+      "round": 4,
+      "positive": "armored undead warrior, ancient battle-worn plate mail named Serath the Unburied, wreathed in pale death-fire, exposed bone at joints, glowing grave-light eyes, sieging and destroying a translucent ghostly assassin, semi-transparent ethereal body named Ashling, trailing shadow tendrils, hollow void eyes, wisps of dark mist, the defeated creature dissolving back into the Veil in an explosion of dark energy, dark mythology aesthetic, Veil rift background with crackling dark energy, professional fantasy card game art, 4k resolution, dramatic shadows",
+      "negative": "cartoon, anime, bright colors, cheerful, simple, low quality, blurry, watermark, text, UI elements, white background",
+      "subject": "Serath the Unburied destroys Ashling"
+    }
+  ],
+  "match_winner": "Kael Duskmantle"
+}
