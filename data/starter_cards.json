@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Veilborn Scout",
+    "type": "unit",
+    "cost": 1,
+    "attack": 2,
+    "defense": 1,
+    "effect": null,
+    "description": "A swift scout from the Veil"
+  },
+  {
+    "id": 2,
+    "name": "Realm Guardian",
+    "type": "unit",
+    "cost": 2,
+    "attack": 2,
+    "defense": 3,
+    "effect": null,
+    "description": "Stalwart defender of the realm"
+  },
+  {
+    "id": 3,
+    "name": "Shadow Assassin",
+    "type": "unit",
+    "cost": 3,
+    "attack": 4,
+    "defense": 2,
+    "effect": null,
+    "description": "Strikes from the shadows"
+  },
+  {
+    "id": 4,
+    "name": "Arcane Mage",
+    "type": "unit",
+    "cost": 4,
+    "attack": 3,
+    "defense": 3,
+    "effect": {"draw": 1},
+    "description": "Draw 1 card when played"
+  },
+  {
+    "id": 5,
+    "name": "Fireball",
+    "type": "spell",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "effect": {"damage": 4, "target": "unit"},
+    "description": "Deal 4 damage to target unit"
+  },
+  {
+    "id": 6,
+    "name": "Healing Light",
+    "type": "spell",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "effect": {"heal": 5, "target": "player"},
+    "description": "Restore 5 health"
+  },
+  {
+    "id": 7,
+    "name": "Veil Fortress",
+    "type": "structure",
+    "cost": 3,
+    "attack": 0,
+    "defense": 5,
+    "effect": {"shield": 1},
+    "description": "Reduce damage taken by 1"
+  },
+  {
+    "id": 8,
+    "name": "War Banner",
+    "type": "structure",
+    "cost": 2,
+    "attack": 0,
+    "defense": 3,
+    "effect": {"buff_attack": 1},
+    "description": "Your units get +1 attack"
+  },
+  {
+    "id": 9,
+    "name": "Lightning Strike",
+    "type": "spell",
+    "cost": 1,
+    "attack": 0,
+    "defense": 0,
+    "effect": {"damage": 2, "target": "any"},
+    "description": "Deal 2 damage to any target"
+  },
+  {
+    "id": 10,
+    "name": "Realm Champion",
+    "type": "unit",
+    "cost": 5,
+    "attack": 5,
+    "defense": 5,
+    "effect": null,
+    "description": "Powerful champion of the realm"
+  },
+  {
+    "id": 11,
+    "name": "Veil Summoner",
+    "type": "unit",
+    "cost": 4,
+    "attack": 2,
+    "defense": 4,
+    "effect": {"summon": "scout"},
+    "description": "Summon a 1/1 Scout when played"
+  },
+  {
+    "id": 12,
+    "name": "Mana Crystal",
+    "type": "spell",
+    "cost": 0,
+    "attack": 0,
+    "defense": 0,
+    "effect": {"mana": 1},
+    "description": "Gain 1 temporary mana this turn"
+  }
+]

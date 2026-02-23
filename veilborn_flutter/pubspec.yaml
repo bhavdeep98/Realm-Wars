@@ -1,0 +1,63 @@
+name: veilborn
+description: Veilborn — The dark mythology card battle game
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Supabase
+  supabase_flutter: ^2.3.0
+
+  # State management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.3
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # UI
+  flutter_animate: ^4.5.0        # Animations
+  shimmer: ^3.0.0                # Loading skeletons
+  cached_network_image: ^3.3.1   # Card art caching
+  flutter_svg: ^2.0.10           # SVG icons
+  google_fonts: ^6.2.1           # Typography
+
+  # In-app purchases
+  purchases_flutter: ^7.4.0      # RevenueCat
+
+  # Utilities
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.9
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Cinzel
+      fonts:
+        - asset: assets/fonts/Cinzel-Regular.ttf
+        - asset: assets/fonts/Cinzel-Bold.ttf
+          weight: 700
+    - family: Crimson
+      fonts:
+        - asset: assets/fonts/CrimsonText-Regular.ttf
+        - asset: assets/fonts/CrimsonText-Italic.ttf
+          style: italic
