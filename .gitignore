@@ -1,0 +1,32 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.pytest_cache/
+
+# Flutter
+veilborn_flutter/.dart_tool/
+veilborn_flutter/.flutter-plugins
+veilborn_flutter/.flutter-plugins-dependencies
+veilborn_flutter/.packages
+veilborn_flutter/build/
+veilborn_flutter/pubspec.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

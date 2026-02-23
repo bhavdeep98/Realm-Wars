@@ -15,6 +15,10 @@ import os
 from dataclasses import dataclass
 from typing import Optional
 from openai import OpenAI
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # ---------------------------------------------------------------------------
 # DM System Prompt — the voice and rules of the narrator

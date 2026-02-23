@@ -26,15 +26,20 @@ A strategic card battler with simultaneous turn resolution and deep tactical gam
 
 ### Backend Setup
 
-1. Set up Supabase project
-2. Run schema from `db/schema.sql`
-3. Seed initial data with `db/seed.sql`
-4. Deploy edge function from `db/edge_function/`
+1. Copy `.env.example` to `.env` and fill in your API keys:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Set up Supabase project
+3. Run schema from `db/schema.sql`
+4. Seed initial data with `db/seed.sql`
+5. Deploy edge function from `db/edge_function/`
 
 ### Engine Testing
 
 ```bash
-cd engine
+pip install -r requirements.txt
 python -m pytest
 ```
 
