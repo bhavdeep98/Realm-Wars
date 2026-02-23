@@ -14,7 +14,7 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY")!;
+const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY")!;
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SUPABASE_SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
 
@@ -442,26 +442,31 @@ Return ONLY a JSON object:
 {"narration": "string (150-250 words)", "round_title": "string (3-6 words)", "key_moment": "string (one sentence)", "tone": "tense|devastating|triumphant|chaotic|grim"}`;
 
 async function callDMAgent(battleLog: object, p1Name: string, p2Name: string) {
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
+      "Authorization": `Bearer ${OPENAI_API_KEY}`,
     },
     body: JSON.stringify({
-      model: "claude-sonnet-4-6",
+      model: "gpt-4o",
       max_tokens: 1024,
-      system: DM_SYSTEM_PROMPT,
-      messages: [{
-        role: "user",
-        content: `Narrate this Veilborn battle round:\n\n${JSON.stringify(battleLog, null, 2)}`,
-      }],
+      messages: [
+        {
+          role: "system",
+          content: DM_SYSTEM_PROMPT,
+        },
+        {
+          role: "user",
+          content: `Narrate this Veilborn battle round:\n\n${JSON.stringify(battleLog, null, 2)}`,
+        }
+      ],
+      response_format: { type: "json_object" },
     }),
   });
 
   const data = await response.json();
-  const text = data.content[0].text.trim();
+  const text = data.choices[0].message.content.trim();
 
   try {
     return JSON.parse(text);

@@ -14,7 +14,7 @@ import json
 import os
 from dataclasses import dataclass
 from typing import Optional
-import anthropic
+from openai import OpenAI
 
 # ---------------------------------------------------------------------------
 # DM System Prompt — the voice and rules of the narrator
@@ -96,7 +96,7 @@ class DMNarration:
 def narrate_round(
     dm_payload: dict,
     api_key: Optional[str] = None,
-    model: str = "claude-sonnet-4-6",
+    model: str = "gpt-4o",
 ) -> DMNarration:
     """
     Call the DM agent with a BattleLog payload.
@@ -104,11 +104,11 @@ def narrate_round(
 
     Args:
         dm_payload: The dict produced by battle_log.to_dm_payload()
-        api_key: Anthropic API key. Falls back to ANTHROPIC_API_KEY env var.
-        model: Claude model to use.
+        api_key: OpenAI API key. Falls back to OPENAI_API_KEY env var.
+        model: OpenAI model to use.
     """
-    client = anthropic.Anthropic(
-        api_key=api_key or os.environ.get("ANTHROPIC_API_KEY")
+    client = OpenAI(
+        api_key=api_key or os.environ.get("OPENAI_API_KEY")
     )
 
     # Strip the instructions field — that was for the old inline approach
@@ -119,16 +119,17 @@ def narrate_round(
 
 {json.dumps(payload_for_dm, indent=2)}"""
 
-    response = client.messages.create(
+    response = client.chat.completions.create(
         model=model,
         max_tokens=1024,
-        system=DM_SYSTEM_PROMPT,
+        response_format={"type": "json_object"},
         messages=[
+            {"role": "system", "content": DM_SYSTEM_PROMPT},
             {"role": "user", "content": user_message}
         ]
     )
 
-    raw_text = response.content[0].text.strip()
+    raw_text = response.choices[0].message.content.strip()
 
     # Parse JSON response
     try:

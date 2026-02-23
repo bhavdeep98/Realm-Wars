@@ -55,7 +55,7 @@ supabase functions deploy resolve-round
 
 Set secrets:
 ```bash
-supabase secrets set ANTHROPIC_API_KEY=sk-ant-your-key-here
+supabase secrets set OPENAI_API_KEY=sk-your-openai-key-here
 ```
 
 ---
@@ -134,7 +134,7 @@ select cron.schedule(
 |-----------------------------|----------------------|-------|
 | `SUPABASE_URL`              | Flutter app          | Your project URL |
 | `SUPABASE_ANON_KEY`         | Flutter app          | Anon key (safe for client) |
-| `ANTHROPIC_API_KEY`         | Supabase secrets     | Your Claude API key |
+| `OPENAI_API_KEY`            | Supabase secrets     | Your OpenAI API key |
 | `SUPABASE_SERVICE_ROLE_KEY` | Edge functions only  | Service role key (never expose) |
 
 ---
